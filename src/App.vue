@@ -2,7 +2,7 @@
 <template>
 <div id="app">
 
-	<section class="hero is-info is-fullheight has-background is-transparent">
+	<section class="hero is-info has-background is-transparent" style="height: 100vh">
 		<div class="hero-head">
 		</div>
 		<div class="hero-body">
