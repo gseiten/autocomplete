@@ -118,7 +118,7 @@ export default {
 				return
 			}
 			this.isFetching = true
-			this.$http.get(`http://photon.komoot.de/api/?q=${name}&limit=8`)
+			this.$http.get(`https://photon.komoot.de/api/?q=${name}&limit=8`)
 				.then(({ data }) => {
 					this.location_data = []
 					data.features.forEach((item) => this.location_data.push(
