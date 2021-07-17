@@ -96,7 +96,7 @@ export default {
 		// getAsyncData: function(name){
 		// 	let letterCount = name.replace(/\s+/g, '').length;
 		// 	if(letterCount > 3){
-		// 		axios.get(`http://photon.komoot.de/api/?q=${name}&limit=8`).then(response => {
+		// 		axios.get(`http://photon.komoot.io/api/?q=${name}&limit=8`).then(response => {
 		// 			this.location_data = [];
 		// 			for(var i in response.data['features']){
 		// 				this.location_data.push(
@@ -118,7 +118,7 @@ export default {
 				return
 			}
 			this.isFetching = true
-			this.$http.get(`https://photon.komoot.de/api/?q=${name}&limit=8`)
+			this.$http.get(`https://photon.komoot.io/api/?q=${name}&limit=8`)
 				.then(({ data }) => {
 					this.location_data = []
 					data.features.forEach((item) => this.location_data.push(
