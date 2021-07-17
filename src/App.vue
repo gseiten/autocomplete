@@ -93,25 +93,6 @@ export default {
 
 	methods: {
 
-		// getAsyncData: function(name){
-		// 	let letterCount = name.replace(/\s+/g, '').length;
-		// 	if(letterCount > 3){
-		// 		axios.get(`http://photon.komoot.io/api/?q=${name}&limit=8`).then(response => {
-		// 			this.location_data = [];
-		// 			for(var i in response.data['features']){
-		// 				this.location_data.push(
-		// 					{
-		// 						'name': response.data['features'][i]['properties']['name'],
-		// 						'country':  response.data['features'][i]['properties']['country'],
-		// 						'type': response.data['features'][i]['properties']['osm_value'],
-		// 						'state': response.data['features'][i]['properties']['state']
-		// 					}
-		// 				)
-		// 			}
-		// 	})
-		// 	}
-		// }
-
 		getAsyncData: debounce(function (name) {
 			if (!name.length) {
 				this.location_data = []
@@ -166,7 +147,4 @@ export default {
     height: 100%;
 }
 
-/* .hero-background.is-transparent {
-    opacity: 0.8;
-} */
 </style>
